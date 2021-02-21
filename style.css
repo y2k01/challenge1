@@ -14,7 +14,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-body .box-image {
+body #box-image {
   position: relative;
   top: 40px;
   right: 400px;
@@ -86,9 +86,23 @@ body .card .info ul li a {
 body .card .info ul li a img {
   height: 10px;
 }
+body .card .info ul li p {
+  margin: 10px 0 10px 0;
+  font-size: 0.75rem;
+  color: black;
+}
 body .attribution {
   position: absolute;
   bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.moveLeft {
+  transform: translateX(-100px);
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <img class="box-image" src="images/illustration-box-desktop.svg" alt="">
+  <img id="box-image" src="images/illustration-box-desktop.svg" alt="">
   <div class="card">
       <div class="images">
         <img class="pattern-image" src="images/bg-pattern-desktop.svg" alt="">
@@ -26,48 +26,55 @@
       <h1>FAQ</h1>
       <ul>
         <li id="q1">
-          <a href="#q1" class="question">
-            <div>
+          <a href="#q1" onclick="hideUnhide(p1)" onmouseover="moveLeft()" class="question">
+            <div id="child-div">
               How many team members can I invite?
             </div>
-            <img src="./images/icon-arrow-down.svg" alt="" class="question-arrow">
+            <img src="./images/icon-arrow-down.svg" id="q1arrow" class="question-arrow">
           </a>
+          <p id="p1" class="paragraph hidden">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the
+            Premium
+            plan.</p>
         </li>
         <div class="divider"></div>
         <li id="q2">
-          <a href="#q2" class="question">
+          <a href="#q2" onclick="hideUnhide(p2)" class="question">
+            <div>
+              What is the maximum file upload size?
+            </div>
+            <img src="./images/icon-arrow-down.svg" alt="" class="question-arrow">
+          </a>
+          <p id="p2" class="paragraph hidden">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </li>
+        <div class="divider"></div>
+        <li id="q3">
+          <a href="#q3" onclick="hideUnhide(p3)" class="question">
             <div>
               How do I reset my password?
             </div>
             <img src="./images/icon-arrow-down.svg" alt="" class="question-arrow">
           </a>
+          <p id="p3" class="paragraph hidden">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
         </li>
         <div class="divider"></div>
-        <li id="q3">
-          <a href="#q3" class="question">
+        <li id="">
+          <a href="#q4" onclick="hideUnhide(p4)" class="question">
             <div>
               Can I cancel my subscription?
             </div>
             <img src="./images/icon-arrow-down.svg" alt="" class="question-arrow">
           </a>
+          <p id="p4" class="paragraph hidden">Yes! Send us a message and we’ll process your request no questions asked.</p>
         </li>
         <div class="divider"></div>
-        <li id="q4">
-          <a href="#q4" class="question">
+        <li id="q5">
+          <a href="#q5" onclick="hideUnhide(p5)" class="question">
             <div>
               Do you provide additional support?
             </div>
             <img src="./images/icon-arrow-down.svg" alt="" class="question-arrow">
           </a>
-        </li>
-        <div class="divider"></div>
-        <li id="q5">
-          <a href="#q5" class="question">
-            <div>
-              How many team members can I invite?
-            </div>
-            <img src="./images/icon-arrow-down.svg" alt="" class="question-arrow">
-          </a>
+          <p id="p5" class="paragraph hidden">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
         </li>
         <div class="divider"></div>
       </ul>
@@ -78,7 +85,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/y2k01">y2k01</a>.
   </div>
   <script src="index.js"></script>
 </body>
